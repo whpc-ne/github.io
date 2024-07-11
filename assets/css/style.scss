@@ -15,27 +15,32 @@ body{
 	line-height: 1.5;
 }
 
-section{
+main{
     width: 800px;
     max-width: calc(100% - 20px);
     margin: 0 auto;
     padding: 0 10px;
 }
 
-header img{
-    display:block;
-    margin: 0 auto;
-    width:300px;
+header{
+	h1{
+	    font-size:30pt;
+	    color:white;
+	    text-align:center;
+	    background: linear-gradient(#039E8E, #00799A);   
+	}
+	img{
+	    display:block;
+	    margin: 0 auto;
+	    width:300px;
+	}
 }
 
-header h1{
+h1, h2{
+	color: $teal;
 	font-family: Trebuchet MS;
-    font-size:30pt;
-    font-variant: small-caps;
-    color:white;
+	font-variant: small-caps;
     letter-spacing:1.5pt;
-    text-align:center;
-    background: linear-gradient(#039E8E, #00799A);   
 }
 
 a{
@@ -47,17 +52,8 @@ a{
 	}
 }
 
-h1, h2{
-	color: $teal;
-	font-variant: small-caps;
-}
-
 li::marker {
   color: $orange;
-}
-
-p.small{
-	font-size: 10pt;
 }
 
 button{
@@ -70,7 +66,16 @@ button{
 	  display: inline-block;
 	  font-size: 18px;
 	  &:hover{
-		color: $teal;
+		background-color: $teal;
 		text-decoration: none;
 	}
 }
+
+p.small{
+	font-size: 10pt;
+}
+
+.center{
+	text-align: center;
+}
+
