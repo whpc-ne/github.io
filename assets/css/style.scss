@@ -9,14 +9,16 @@ $blue: #00799A;
 /* general */
 
 body{
-	font-family: Georgia, serif;
-	font-size: 11pt;
+	font-family: Moneratt, serif;
+	font-size: 12pt;
 	color: $dkgray;
 }
 
 section, header{
-	width: 800px;
-	margin: 0 auto;
+    width: 800px;
+    max-width: calc(100% - 20px);
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 a{
@@ -26,5 +28,9 @@ a{
 		color: $dkgray;
 		text-decoration: none;
 	}
+}
+
+h1, h2{
+	color: $teal;
 }
 
