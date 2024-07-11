@@ -1,0 +1,30 @@
+---
+---
+
+$dkgray: #515151;
+$teal: #039E8E;
+$orange: #F16A4E;
+$blue: #00799A;
+
+/* general */
+
+body{
+	font-family: Georgia, serif;
+	font-size: 11pt;
+	color: $dkgray;
+}
+
+section, header{
+	width: 800px;
+	margin: 0 auto;
+}
+
+a{
+	color: $blue;
+	text-decoration: none;
+	&:hover{
+		color: $dkgray;
+		text-decoration: none;
+	}
+}
+
