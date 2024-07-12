@@ -27,7 +27,8 @@ header{
 	    font-size:30pt;
 	    color:white;
 	    text-align:center;
-	    background: linear-gradient(#039E8E, #00799A);   
+	    background: linear-gradient(#039E8E, #00799A); 
+	    padding: 10px 0;  
 	}
 	img{
 	    display:block;
@@ -36,11 +37,18 @@ header{
 	}
 }
 
-h1, h2{
+footer{
+	color: white;
+	height: 60px;
+	background: linear-gradient(#039E8E, #00799A);   
+	text-align:center;
+}
+
+h1, h2, button{
 	color: $teal;
 	font-family: Trebuchet MS;
 	font-variant: small-caps;
-    letter-spacing:1.5pt;
+    letter-spacing: 1.5pt;
 }
 
 a{
@@ -50,6 +58,13 @@ a{
 		color: $dkgray;
 		text-decoration: none;
 	}
+}
+
+hr{
+    height: 2px;
+    width: 50%;
+    max-width: 400px;
+    background: linear-gradient(to right, #00799A,#039E8E)
 }
 
 li::marker {
@@ -64,10 +79,12 @@ button{
 	  text-align: center;
 	  text-decoration: none;
 	  display: inline-block;
-	  font-size: 18px;
+	  font-size: 25px;
+      transition-duration: 0.4s;
 	  &:hover{
 		background-color: $teal;
 		text-decoration: none;
+		cursor: pointer;
 	}
 }
 
